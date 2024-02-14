@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    border: border-box;
+    font-family: arial;
+}
+/** main navbaar making **/
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1.5px solid black;
+   
+}
+.border:hover {
+    border: 1.5px solid white;
+}
+.nav-logo {
+    height: 52px;
+    width: 130px;
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+}
+/** box2**/
+
+.nav-address {
+    color: white;
+}
+.nav-upperaddress {
+    font-size: 0.65rem;
+    color: #cccccc;
+    margin-left: 15px;
+}
+.nav-location {
+    display: flex;
+    font-size: 0.85rem;
+    font-weight: 500;  
+}
+.nav-location p {
+    margin-left: 10px;
+}
+
+
+/** box3**/
+
+.nav-search {
+    display: flex;
+    color: white;
+    font-size: 0.85rem;
+    width: 650px;
+    height: 40px;
+    background-color: pink;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.nav-search select {
+    font-size: 0.8rem;
+    color: #0f1111;
+    height: 40px;
+    background-color: #f3f3f3;
+    width: 50px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.nav-mainsearch {
+    width: 550px;
+    font-size: 1.2rem;
+    padding: 7px 10px 10px 0px;
+    padding-top: 10px;
+}
+.nav-search:hover {
+    border: 1.5px solid white;
+
+}
+.nav-searchicon {
+    width: 45px;
+    height: 30px; 
+    padding-top: 10px;
+    background-color: rgba(255, 208, 0, 0.96);
+    font-size: 25px;
+    border-radius: 4px;
+}
+.nav-search:active {
+    border: 4px solid yellow;
+}
+/**english logo**/
+.nav-country {
+    height: 45px;
+    font-weight: 56px;
+    color: white;
+    margin-top: 20px;
+}
+.nav-country select {
+    background-color: #0f1111;
+    color: white;
+}
+/***---------------------------------------------making button---------------------------------------------------------**/
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slider {
+    height: 20px;
+    width: 40px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.slider::before {
+    content: '🌤';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    width: 18px;
+    height: 18px;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 50%;
+    margin: 2px;
+    
+}
+ input:checked + .slider{
+    background-color: rgb(0, 132, 255);
+   
+}
+ input:checked + .slider::before {
+    transform: translateX(19px);
+    content: "🌙";
+    background-color: #0f1111;
+    margin-bottom: 2px;
+   
+}
+ input {
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+
+
+
+
+/**box4 and nextbox**/
+
+.nav-box4 {
+    color: white;
+
+}
+.nav-box4 p {
+    font-size: 0.7rem;
+}
+.nav-box4uppercase {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/** box5 **/
+
+.nav-box5 {
+    color: #ffffff;
+    font-size: 0.85rem;
+    display: flex;
+}
+.nav-box5 i {
+    font-size: 1.5rem;
+
+}
+.box5-cart {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/**-------------------------------------------------------second navbar -------------------------------------------------------------------**/
+.secondnavbar {
+    color: white;
+    background-color: #232f3e;
+    height: 40px;
+    display: flex;
+   
+}
+/** all**/
+.nav-all {
+    height: 39px;
+    width: 59px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.nav-all p {
+    margin-left: 5px;
+}
+/**----------box2----------------------**/
+.nav-items {
+    display: flex;
+    height: 39px;
+    width: 670px;
+    font-size: 0.9rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/**----------box3---------------------**/
+.nav-sideimage {
+    height: 39px;
+    width: 400px;
+    background-image: url("main.jpg");
+    background-size: cover;
+    align-self: left;
+    margin-left: 330px;
+
+}
+/**-------------------------------------------------------------main content--------------------------------------------------**/
+.heroimage {
+    height: 350px;
+    background-image: url("hero.jpg");
+    background-size: cover;
+    color: black;
+}
+.heroimage p {
+    font-size: 0.9rem;
+    background-color: #cccccc;
+}
+.heroimage a {
+    color: blue;
+}
+/**---------------------------Now shop now things----------------**/
+.shoping-item {
+    height: 1000px;
+    background-color: #ffa600c8;
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+.shoping-item1 {
+    width: 329px;
+    height: 420px;
+    background-color: #ffffff ; 
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px 20px 15px;
+    flex-wrap: wrap;
+    margin: 20px 0px 0px 15px;
+}
+.shoping-item1 p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.shoping-item1 a {
+    align-self: flex-end;
+    font-size: 0.8rem;
+    color: blue;
+}
+.image1 {
+    height: 277px;
+    width: 344px;
+    background-image: url("image1.jpg");
+    background-size: cover;
+}
+.image2 {
+    height: 277px;
+    width: 344px;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+
+.image2 div {
+    margin: 0px 0px 10px 10px;
+    height: 115px;
+    width: 130px;
+}
+.image2-1 {
+    background-image: url("image2.jpg");
+    background-size: cover;
+}
+.image2-2 {
+    background-image: url("image2.jpg");
+    background-size: cover;
+}
+.image2-3 {
+    background-image: url("image2.jpg");
+    background-size: cover;
+}
+.image2-4 {
+    background-image: url("image2.jpg");
+    background-size: cover;
+}
+.image3-1 {
+    background-image: url("image3.jpg");
+    background-size: cover;
+}
+.image3-2 {
+    background-image: url("image3-1.jpg");
+    background-size: cover;
+}
+.image3-3 {
+    background-image: url("image3-2.jpg");
+    background-size: cover;
+}
+.image3-4 {
+    background-image: url("image3-3.jpg");
+    background-size: cover;
+}
+/***-----------------------------------------------------------lets make the last part of this page ---------------------------------**/
+
+.baar1 {
+    background-color: #37475A;
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    display: flex;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.baar2 {
+    background-color: #232f3e;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.baar2 p {
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+.baar3 {
+    background-color: #232f3e;
+    height: 50px;
+    border-top: 1px solid white;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   
+}
+.logo {
+    height: 48px;
+    width: 120px;
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+}
